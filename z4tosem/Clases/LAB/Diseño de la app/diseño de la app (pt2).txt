@@ -1,0 +1,13 @@
+Regla de negocio			Desactualizada
+
+"Diseño de la aplicación"
+	Documento de requerimientos.	Desactualizada
+	Diagrama de casos de uso.	Desactualizada
+	Especificación de casos de uso.	Desactualizada
+
+"Diseño de la aplicación (parte 2)"
+	Diagrama Entidad - Relación.	Pendiente
+	Diagrama de actividades.	Pendiente
+	Diagrama de secuencias.		Pendiente
+	Mapa de navegación.		Pendiente
+	Look and feel.			Listo???

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+No supe validar, y no pude conectarme a la base de datos por razones que yo no comprendo, adjunto captura de esto en el documento de word.
+-->
+<html>
+    <head>
+        <title>Evaluación Segundo Periodo. Caso Práctico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <link rel="stylesheet" href="estilillos/estilillos.css"/>
+        <div align="left" class="Banner" style="float: left; display: table; width: 100%; height: 25px">
+            FormulariosCotorros.com
+            <img src="https://cotorritos.mx/wp-content/uploads/2019/08/00-SLIDER-COTORRO.png"
+            width="40px" height="40px" align="center">
+        </div>
+        <div align="center" class="Titulo" style="float: left; display: table; width: 100%; height: 100px">
+            Formulario de divulgación de artistas musicales
+        </div>
+        <hr>
+        <div align="center" class="Cuerpo" style=" display: table; width: auto; height: auto">
+            Bienvenido al formulario para dar a conocer a sus artistas favoritos que piense que merecen más reconocimiento.<br>
+            Porque el mundo del arte puede ser muy cruel e injusto, ¡por favor, llene el siguiente formulario!
+        </div>
+        <ul>
+            <!--<form method="post" action="https://www.cecyt9.ipn.mx">-->
+            <form name="datos" method="post" action="jotaesepe.jsp">
+                <!--FALTA AGREGAR EL JSP-->
+                <li>
+                    <div style="height: 25px">
+                        <label for="Nombreartis">Nombre
+                            <input id="nombreartis" name="nombreartis" type="text" size="25" maxlenght="50" required="">
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div style="height: 25px">
+                        <label for="cancion">Nombre de una canción de referencia
+                            <input id="cancion" name="cancion" type="text" size="25" maxlength="50" required="">
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div style="height: 25px">
+                        <label for="fechacancion">Ingrese el año de la canción de referencia
+                            <input id="fechacancion" name="fechacancion" type="text" size="25" maxlength="50" required="">
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div style="height: 55px">
+                    Genero musical
+                        <select id="genero" name="genero">
+                            <option value="1">Selecciona</option>
+                            <option value="2">Pop</option>
+                            <option value="3">Rock</option>
+                            <option value="4">Hip-hop</option>
+                            <option value="5">Jazz</option>
+                            <option value="6">Lo-fi</option>
+                            <option value="7">Rap</option>
+                        </select>
+                        <br>
+                        <label for="otro">Otro género musical (De ser necesario llenar este campo, de lo contrario escribir un guión medio '-')
+                            <input id="otro" name="otro" type="text" size="25" maxlength="50" required="">
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div style="height: 25px">
+                        <label for="tipo_de_artista">Seleccione si el artista es una persona, un dueto, o una banda (a partir de tres integrantes)
+                            <input id="tipo_de_artista" name="tipo_de_artista" type="radio" value="s">Solista/Compositor independiente
+                            <input id="tipo_de_artista" name="tipo_de_artista" type="radio" value="d">Dueto
+                            <input id="tipo_de_artista" name="tipo_de_artista" type="radio" value="b">Banda
+                            
+                        </label>
+                    </div>    
+                </li>
+        </ul>
+                <div>
+                    <input name="btnEnviar" type="submit" value="¡Listo!">
+                </div>
+	
+    </body>
+</html> 

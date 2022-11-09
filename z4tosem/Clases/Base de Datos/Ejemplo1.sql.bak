@@ -1,0 +1,17 @@
+#Caudillo  Villegas Juan Pablo
+#4IM10
+
+create database ESCUELA;
+drop database if exists ESCUELA;
+use ESCUELA;
+create table Carrera(
+Id_carrera int primary key not null,
+carrera varchar (20)
+);
+create table Alumnos(
+Matricula int primary key not null,
+nombre varchar (20),
+apellido varchar (20),
+direccion varchar (20),
+telefono varchar (20)
+);

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Actividad Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Estilos/estilos.css"/>
+        <script>
+            function calcula(oper,num1,num2){
+                var v1= parseInt(num1.value);
+                var v2= parseInt(num2.value);
+                
+                if(oper.name=='suma')
+                    window.alert("El resultado de la suma es" + (v1+v2));
+                else if(oper.name=='resta') 
+                    window.alert("El resultaod de la resta es " + (v1-v2));
+                else if(oper.name=='multi') 
+                    window.alert("El resultaod de la multiplicacion es " + (v1*v2));
+                else if(oper.name=='divi') 
+                    window.alert("El resultaod de la division es " + (v1/v2));
+                
+            }
+            //document.writeln("<h1>Ejemplo de JavaScript</h1>")
+            //window.alert("Bienvenidos \nEsto es un cuadro de alerta");
+            //var nombre;
+            //nombre= window.prompt("Escribe tu nombre");
+            //document.writeln("<h1>Buenos días " + nombre + "</h1>");
+            //document.writeln("<h2>Este es otro ejemplo</h2>");
+            
+        </script>
+    </head>
+    <body >
+        <form>
+            <p class="datos">
+                Nombre: Fuentes Jarquin Jesús Ángel
+                <br>Grupo: 4IM10
+                <br>Sección: "A"
+                <br>Fecha: 14/03/2022
+            </p>
+            <p class="oper">
+                <label>Primer valor: 
+                    <input name="num1" type="text">
+    
+                </label>    
+            </p>
+            <p class="oper">
+                <label>Segundo valor: 
+                    <input name="num2" type="text">
+                    
+                </label>
+            </p>
+            <br></br>
+
+            <input type="button" name="suma" value="Sumar" onclick="calcula(suma,num1,num2);">
+            <input type="button" name="resta" value="Restar" onclick="calcula(resta,num1,num2);">
+            <input type="button" name="multi" value="Multiplicar" onclick="calcula(multi,num1,num2);">
+            <input type="button" name="divi" value="Divide" onclick="calcula(divi,num1,num2);">
+            
+        </form>
+    </body>
+</html>

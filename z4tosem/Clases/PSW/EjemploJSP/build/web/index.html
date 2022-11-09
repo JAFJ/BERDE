@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #contenedor {
+                width: 50%;
+                padding: 20px;
+                border: 2px black;
+                background-color: #fafafa;
+                margin: auto;
+            }
+        </style>
+        <script>
+            function validar (){
+                dato=document.getElementById("dato").value;
+                resultado= document.getElementById("resultado");
+                if (dato===""){
+                    resultado.innerText = "No existe cadena de caracteres para evaluar";
+                }else{
+                    if (esNumero(dato)){
+                        resultado.innerText=("La cadena de caracteres es NUMERICA: "+parseFloat(dato).toFixed(2));
+                    }else{
+                        resultado.innerText=("La cadena de caracteres no es numerica");
+                        
+                    }
+                }
+            }
+            
+            function valNumero(){
+                var dato=document.getElementById("dato").value;
+                var valoresAceptados=/^[0-9]+$/;
+                if (dato.match(valoresAceptados))
+                    alert("Es numérico");
+                else
+                    alert("No es numérico");
+            }
+            
+            function esNumero(dato){
+                var valoresAceptados =/^[0-9]*(\.?)[0-9]+$/;
+                if (dato.indexOf(".")===-1){
+                        if(dato.match(valoresAceptados)){
+                            return true;
+                        }else{
+                            return false;
+                        }
+                    }else{
+                        var particion=dato.split(".");
+                        if (particion[0].match(valoresAceptados) || particion[0]===""){
+                            if (particion[1].match(valoresAceptados)){
+                                return true;
+                            }else{
+                                return false;
+                            }
+                            }else{
+                                return false;
+                            }
+                            }
+                    }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Ejemplo de formulario HTML p'ara envair datos a unapgaina JSP
+        </h1>
+        <form method="post" action="Datitos.jsp"/>
+            <p>Tu nombre:</p>
+            <input type="text" name="nombre"/>
+            <p>
+                <input type="submit" value="Enviar"/>
+            </p>
+                <div id="contenedor">
+                    <label> Expresión a validar</label>
+                    <input type="text" id="dato" size="10" value=""/>
+                    <p> 
+                        <input type="button" id="boton" onclick="validar()"
+                               value="Evaluar"/>
+                    </p>
+                        <p>
+                            <input type="button" id="btnVal" onclick="valNumero()" value="Evaluar Números"/>
+                    </p>
+                    <p id="resultado">Resultado</p>
+            </div>
+    </body>
+</html>

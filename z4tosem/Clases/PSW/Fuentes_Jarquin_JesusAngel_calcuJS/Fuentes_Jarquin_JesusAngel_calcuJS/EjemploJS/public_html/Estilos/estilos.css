@@ -1,0 +1,15 @@
+body{
+     background-color: rgb(59, 53, 63);
+}
+.datos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(202, 156, 245);
+    
+}
+.oper{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(156, 245, 241);
+}
+h1{
+    color: aqua;
+}

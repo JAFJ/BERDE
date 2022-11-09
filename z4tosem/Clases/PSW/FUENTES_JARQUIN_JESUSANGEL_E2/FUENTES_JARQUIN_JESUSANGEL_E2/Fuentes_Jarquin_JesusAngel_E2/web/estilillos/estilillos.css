@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(245, 231, 220);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.Banner {
+    background-color: rgb(40, 152, 18);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(245, 231, 220);
+    font-size: 250%;
+}
+
+
+.Titulo{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+ul li:hover{
+    background-color: rgba(0, 255, 221, 0.175);
+}
+
+.Cuerpo{
+    font-size: 20px;
+    margin: 0 auto;
+}

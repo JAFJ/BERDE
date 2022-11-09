@@ -1,0 +1,15 @@
+uhhhh después de mter la carepeta en c, nos metemos a config y abirmos el arcghivo 'tomcat-users.xml'
+eso lo abrimos con notepad o lo que sea abrible y entolnces copiamos y pegamos una línea.
+<user password="n0m3l0" roles="manager-script,admin" username="root"/>
+eso antes de tomcat-users
+
+desde netbeans nos vamos a archivo, nuevo poryecto, damos clic en  'java with ant' y después 'java web', despues damos cilck en web application, next, después lo nombramos "ejemploJSP"
+
+le das a next, le agregas servidor
+te metes a add server instance y la dirección del servidor es la carpeta de apache tomcat, le metes usuario y contraseña
+ya después es finalizar
+y ya crea la aplicación
+
+lo ejecutamos, le metemos usuario y contraseña
+
+luego, en el index de EjemploJSP le metemos el codigo

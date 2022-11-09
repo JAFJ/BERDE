@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ninguno"
+            android:title=""/>
+        <item
+            android:id="@+id/nav_principal"
+            android:title="Principal" />
+        <item
+            android:id="@+id/nav_Comunidad"
+            android:title="Comunidad" />
+        <item
+            android:id="@+id/nav_micuenta"
+            android:title="Mi Cuenta" />
+        <item
+            android:id="@+id/nav_misposts"
+            android:title="Mis Posts" />
+        <item
+            android:id="@+id/nav_mispedidos"
+            android:title="Mis Pedidos" />
+    </group>
+    <item android:title=" ">
+        <menu>
+            <item
+                android:id="@+id/nav_cerrarsesion"
+                android:title="Cerrar sesión" />
+        </menu>
+    </item>
+
+
+</menu>

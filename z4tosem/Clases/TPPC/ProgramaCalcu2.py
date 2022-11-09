@@ -1,0 +1,43 @@
+#Evidencia Integradora Programa 3
+menu=input("Elija la opción deseada: \n SUM: Suma \n RES: Resta \n MUL: Multiplicacion \n DIV: Division \n EXP: Exponente\n")
+if(menu=="SUM"):
+        print("Suma")
+        v1=int(input("Inserte el primer valor:\n "))
+        v2=int(input("Inserte el segundo valor:\n "))
+        print(str(v1)," + ",(str(v2))," =")
+        result=eval("v1+v2")
+        print(result)
+        print("¡Gracias por usar el programa!")
+if(menu=="RES"):
+        print("Resta")
+        v1=int(input("Inserte el primer valor:\n "))
+        v2=int(input("Inserte el segundo valor:\n "))
+        print(str(v1)," - ",(str(v2))," =")
+        result=eval("v1-v2")
+        print(result)
+        print("¡Gracias por usar el programa!")
+if(menu=="MUL"):
+        print("Multiplicacion")
+        v1=int(input("Inserte el primer valor:\n "))
+        v2=int(input("Inserte el segundo valor:\n "))
+        print(str(v1)," * ",(str(v2))," =")
+        result=eval("v1*v2")
+        print(result)
+        print("¡Gracias por usar el programa!")
+if(menu=="DIV"):
+        print("Division")
+        v1=int(input("Inserte el primer valor:\n "))
+        v2=int(input("Inserte el segundo valor:\n "))
+        print(str(v1)," / ",(str(v2))," =")
+        result=eval("v1/v2")
+        print(result)
+        print("¡Gracias por usar el programa!")
+if(menu=="EXP"):
+        print("Exponente")
+        v1=int(input("Inserte el primer valor:\n "))
+        v2=int(input("Inserte el segundo valor:\n "))
+        print(str(v1)," ^ ",(str(v2))," =")
+        result=eval("v1**v2")
+        print(result)
+        print("¡Gracias por usar el programa!")
+#Fin

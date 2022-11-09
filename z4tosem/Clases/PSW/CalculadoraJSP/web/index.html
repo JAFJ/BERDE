@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos-calcu.css"/>
+    </head>
+    <body>
+        <form name="calcu" action="operaciones.jsp" method="get">
+            <h1 class="titulos">Ejemplo JSP</h1>
+
+            <h2 class="yea">Selecciona la operacion que deseas realizas</h2>
+            Operacion: <select name="selectOper">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multi">Multiplicacion</option>
+                <option value="divi">Division</option>                
+            </select>
+            <br><br>
+            <p class="yea">Ingresa el primer número:</p>
+            <input type="text" name="txtnum1">
+            <br><br>
+            <p class="yea">Ingresa el segundo número:</p>
+            <input type="text" name="txtnum2">
+            <br><br>
+            <input type="submit" name="b1" value="Enviar"><br>
+
+        </form>
+    </body>
+</html>

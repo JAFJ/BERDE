@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+    </style>
+    <head>
+        <title>Veterinaria El Dogtor</title>
+    </head>
+        
+    <body>
+        <link rel="stylesheet" href="estilos.css"/>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+            <div class="superdiv">
+                <form action="" class="formulario" id="formulario">
+                    <div class="Banner">
+                        <p>El Dogtor
+                        <img src="https://st.depositphotos.com/1146092/3221/i/600/depositphotos_32212055-stock-photo-medical-doctor-dog.jpg"
+                              class="logo" align="center">
+                        </p>
+                    </div>
+                    <div class="banercito">
+                    <p>Registro clientes</p>
+                </div>
+                </form>
+                <br>
+                <br>
+
+                <br>
+                <br>
+                
+                <form name="datosCliente" method="post" action="tablaDatos.jsp" class="formulario2" id="formulario">
+                
+                    <!-- Grupo: Usuario -->
+                    <div class="formulario__grupo" id="grupo__CURP">
+                        <label for="CURP" class="formulario__label">CURP</label>
+                        <div class="formulario__grupo-input">
+                            <input name="CURP" id="CURP" type="text" class="formulario__input" placeholder="Ej.: FEPM890204HASRRN08">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El CURP tiene que ser de 18 dígitos y solo puede contener numeros y letras.</p>
+                    </div>
+
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input name="nombre" id="nombre" type="text" class="formulario__input" placeholder="Ej.: Juan Pérez">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña -->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input name="password" id="password" type="password" class="formulario__input" name="password" id="password" placeholder="¡No la vayas a revelar a cualquiera!">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser 8 a 16 dígitos.</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña 2 -->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input name="password2" id="password2" type="password" class="formulario__input">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                    </div>
+
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input name="telefono" id="telefono" type="text" class="formulario__input" placeholder="5X-XXXX-XXXX">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                </form>
+                
+                <form method="post" action="indexMascota.html" id="formulario">>
+                    <div align="center">
+                        <p>Si no tiene mascotas registradas o quiere registrar una nueva, dé click en 'Registro de mascota'</p>
+                        <button type="submit" class="formulario__btn">Registro de mascota</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <script src="formulario.js"></script>
+
+            <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </body>
+</html>
